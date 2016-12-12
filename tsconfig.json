@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "rootDir": "src",
+    "outDir": "lib/",
+    "noImplicitAny": true,
+    "noEmitHelpers": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "exclude": [
+    "node_modules",
+    "lib",
+    "example",
+    "**/*.spec.ts",
+    ".vscode"
+  ]
+}

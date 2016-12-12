@@ -1,0 +1,50 @@
+{
+  "name": "ng2-config-initializer-decorator",
+  "version": "1.0.0",
+  "description": "A decorator for ng2 components to allow passing arbitrary data to a custom defined proxy service",
+  "main": "./lib/index.js",
+  "module": "./src/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./lib; tsc --declaration",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint './src/**/*.ts' './example/**/*.ts --exclude './example/node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efidiles/ng2-config-initializer-decorator.git"
+  },
+  "keywords": [
+    "angular2",
+    "decorator",
+    "config",
+    "component",
+    "initializer",
+    "proxy",
+    "provider",
+    "layout",
+    "general",
+    "generic",
+    "ng2"
+  ],
+  "author": "Eduard Fidiles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efidiles/ng2-config-initializer-decorator/issues"
+  },
+  "homepage": "https://github.com/efidiles/ng2-config-initializer-decorator#readme",
+  "devDependencies": {
+    "@types/core-js": "0.9.32",
+    "@angular/core": "2.2.0",
+    "@angular/compiler": "2.2.0",
+    "codelyzer": "2.0.0-beta.1",
+    "rimraf": "2.5.4",
+    "tslint": "4.0.2",
+    "typescript": "2.1.4",
+    "zone.js": "0.6.21",
+    "rxjs": "5.0.0-beta.12"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=2.2.0"
+  }
+}
