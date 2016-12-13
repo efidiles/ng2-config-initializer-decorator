@@ -1,6 +1,6 @@
 {
   "name": "ng2-config-initializer-decorator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A decorator for ng2 components to allow passing arbitrary data to a custom defined proxy service",
   "main": "./lib/index.js",
   "module": "./src/index.js",
