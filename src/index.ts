@@ -11,6 +11,7 @@ export function ConfigInitializer<T>(config: T) {
 
 	return function ConfigInitializerDecorator(targetConstructor: any) {
 		const metaInformation = getOwnMetadata('annotations', targetConstructor);
+		const propMetaInformation = getOwnMetadata('propMetadata', targetConstructor);
 		const designParamtypesInformation = getOwnMetadata('design:paramtypes', targetConstructor);
 		const parametersInformation = getOwnMetadata('parameters', targetConstructor);
 
@@ -25,6 +26,7 @@ export function ConfigInitializer<T>(config: T) {
 		}
 
 		defineMetadata('annotations', metaInformation, newConstructor);
+		defineMetadata('propMetadata', propMetaInformation, newConstructor);
 		defineMetadata('parameters', parametersInformation, newConstructor);
 		defineMetadata(
 			'design:paramtypes',
